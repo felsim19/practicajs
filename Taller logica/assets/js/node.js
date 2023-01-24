@@ -55,7 +55,6 @@ function multiplicar_pu_5 () {
     for (let i = 1; i <= cantidad; i++) {
         resultado_pu_5 = resultado_pu_5 + (tabla + "x" + i + "=" + (tabla*i) + "<br>")
         document.getElementById ("resultado_multiplicar").innerHTML = resultado_pu_5
-        console.log(resultado_pu_5)
     }
 }
 
@@ -63,10 +62,10 @@ function multiplicar_pu_5 () {
 function validacion_pu_6 () {
     let validacionmatricula = document.getElementById ("punto_6").value
     let matricula = 1000000
-    if (validacionmatricula <= 2){
+    if (validacionmatricula <= 2.99){
     document.getElementById ("valor_total").innerHTML = matricula
     }else{
-        if (validacionmatricula <= 4){
+        if (validacionmatricula >=3 && validacionmatricula <=4){
             let descuento_caso_1 = 5
             let descuento_1 = (matricula * descuento_caso_1) /100
             matricula = matricula - descuento_1
@@ -81,7 +80,7 @@ function validacion_pu_6 () {
 
  
 
-    }
+    }   
     
     
 }
